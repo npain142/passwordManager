@@ -10,16 +10,16 @@ boolean pww = false;
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        if(e.getSource() == Window.search){
+        if(e.getSource() == Frame.search){
             
-            System.out.println("Searching for: "+Window.jt.getText());
-            System.out.println("Password: "+m.getPasswort(Window.jt.getText()));
+            System.out.println("Searching for: "+Frame.jt.getText());
+            System.out.println("Password: "+m.getPasswort(Frame.jt.getText()));
 
-            Window.jl = new JLabel(Window.jt.getText()+": "+m.getPasswort(Window.jt.getText()));
+            Frame.jl = new JLabel(Frame.jt.getText()+": "+m.getPasswort(Frame.jt.getText()));
 
         }
 
-        if(e.getSource()==Window.newEntry){
+        if(e.getSource()==Frame.newEntry){
             if(!pww){
             PwWindow pw = new PwWindow();
             pww = true;

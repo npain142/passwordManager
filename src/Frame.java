@@ -1,7 +1,6 @@
 import javax.swing.*;
-import java.awt.*;
 
-public class Window{
+public class Frame{
 
     static JFrame jf;
     static JLabel jl;
@@ -11,7 +10,7 @@ public class Window{
 
     String[] s = {"Daniel"};
     JList l = new JList(s);
-    public Window(){
+    public Frame(){
 
         create();
 
